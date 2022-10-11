@@ -98,7 +98,7 @@ for tweet in reversed(searched_tweets):
 	else:
 		text=tweet.full_text
 
-	# To add more IOCs check 
+	# To add more IOCs check https://inquest.readthedocs.io/projects/iocextract/en/latest/#more-details
 	urls=iocextract.extract_urls(text, refang=True)
 	ips=iocextract.extract_ips(text, refang=True)
 	sha256s=iocextract.extract_sha256_hashes(text)
