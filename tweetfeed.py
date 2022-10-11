@@ -51,8 +51,8 @@ searched_tweets2 = [status for status in tweepy.Cursor(api.search_tweets, q=quer
 
 searched_tweets = searched_tweets1 + searched_tweets2
 
-# Control Rate limit
-data = api.rate_limit_status() 											# Datos de rate limit
+# Control Rate Limit (see https://developer.twitter.com/en/docs/twitter-api/v1/rate-limits)
+data = api.rate_limit_status()	Rate limit
 remaining=data["resources"]["search"]["/search/tweets"]["remaining"] 	# Remaining rate limit
 
 # IOCs already seen
@@ -104,7 +104,7 @@ for tweet in reversed(searched_tweets):
 	sha256s=iocextract.extract_sha256_hashes(text)
 	md5s=iocextract.extract_md5_hashes(text)
 
-	# Write URLs
+	# Get URLs
 	for url in urls:
 		if url not in seen_urls and not url.startswith("https://t.co") and url not in whitelist_urls:
 
@@ -145,7 +145,7 @@ for tweet in reversed(searched_tweets):
 			seen_urls.append(url)
 			new_urls.append(url)
 
-	# Write IPs
+	# Get IPs
 	for ip in ips:
 		if ip not in seen_ips and ip not in whitelist_ips:
 
@@ -186,7 +186,7 @@ for tweet in reversed(searched_tweets):
 			seen_ips.append(ip)
 			new_ips.append(ip)
 
-	# Write SHA256s
+	# Get SHA256s
 	for sha256 in sha256s:
 		if sha256 not in seen_sha256:
 
@@ -227,7 +227,7 @@ for tweet in reversed(searched_tweets):
 			seen_sha256.append(sha256)
 			new_sha256.append(sha256)
 
-	# Write md5s
+	# Get MD5s
 	for md5 in md5s:
 		if md5 not in seen_md5:
 
