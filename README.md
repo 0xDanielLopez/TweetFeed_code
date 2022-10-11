@@ -2,7 +2,7 @@
   <h1 align="center">TweetFeed (code)</h1>
 
   <p align="center">
-    Core part of the source code used at the repo <a href="https://github.com/0xDanielLopez/TweetFeed">TweetFeed</a>
+    Core of the source code used at the repo <a href="https://github.com/0xDanielLopez/TweetFeed">TweetFeed</a>
     <br />
     <br />
     <strong>Web version at <a href="https://tweetfeed.live/">TweetFeed.live</a></strong>
