@@ -2,7 +2,7 @@
   <h1 align="center">TweetFeed (code)</h1>
 
   <p align="center">
-    Source code used at the repo <a href="https://github.com/0xDanielLopez/TweetFeed">TweetFeed</a>
+    Source code used at <a href="https://github.com/0xDanielLopez/TweetFeed">TweetFeed</a>
     <br />
     <br />
     <strong>Web version at <a href="https://tweetfeed.live/">TweetFeed.live</a></strong>
