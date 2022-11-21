@@ -52,7 +52,7 @@ searched_tweets2 = [status for status in tweepy.Cursor(api.search_tweets, q=quer
 searched_tweets = searched_tweets1 + searched_tweets2
 
 # Control Rate Limit (see https://developer.twitter.com/en/docs/twitter-api/v1/rate-limits)
-data = api.rate_limit_status()	Rate limit
+data = api.rate_limit_status()	#Rate limit
 remaining=data["resources"]["search"]["/search/tweets"]["remaining"] 	# Remaining rate limit
 
 # IOCs already seen
