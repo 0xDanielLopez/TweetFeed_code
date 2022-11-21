@@ -30,7 +30,7 @@ $ python3 tweetfeed.py
 ```
 ## Example output
 
-![Screenshot](https://user-images.githubusercontent.com/10616960/194862040-cc78c1aa-808a-4b91-a3b7-b810e28f9cc4.png)
+![Screenshot](https://user-images.githubusercontent.com/10616960/203121866-320ed1ec-a3d5-4867-811c-c5cfcaeccb2f.png)
 
 ## Some comments
 
